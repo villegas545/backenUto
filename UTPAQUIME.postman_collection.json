@@ -1,0 +1,195 @@
+{
+	"info": {
+		"_postman_id": "b30c2cfb-228b-4069-8872-11fc17f3835d",
+		"name": "UTPAQUIME",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "usuario",
+							"value": "villegas",
+							"type": "text"
+						},
+						{
+							"key": "contra",
+							"value": "0123456789",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5001/usuario",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"usuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar productos",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:5001/productos/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"productos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener productos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5001/productos",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Guardar producto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "codigo",
+							"value": "1111",
+							"type": "text"
+						},
+						{
+							"key": "marca",
+							"value": "unamarca",
+							"type": "text"
+						},
+						{
+							"key": "descripcion",
+							"value": "unadescripcion",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "5.32",
+							"type": "text"
+						},
+						{
+							"key": "categoria",
+							"value": "Calzado",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5001/productos",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener producto por Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5001/productos/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"productos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar producto",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "codigo",
+							"value": "nuevocodigo",
+							"type": "text"
+						},
+						{
+							"key": "marca",
+							"value": "nuevamarca",
+							"type": "text"
+						},
+						{
+							"key": "descripcion",
+							"value": "nuevadescripcion",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "nuevoprecio",
+							"type": "text"
+						},
+						{
+							"key": "categoria",
+							"value": "nuevacategoria",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5001/productos/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"productos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
