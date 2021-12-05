@@ -5,7 +5,9 @@ import morgan from "morgan";
 import bodyParser from "body-parser";
 const servidor = express();
 
+servidor.use(bodyParser.json());
 servidor.use(cors());
+
 servidor.use(morgan("dev"));
 servidor.use(
   express.json({
@@ -17,9 +19,8 @@ servidor.use(
     limit: "50mb",
   })
 );
-
-servidor.use(bodyParser.json());
 servidor.use(router);
+
 servidor.listen(5001, () => {
   console.log("Felicidades, Iniciaste tu primer servidor");
 });

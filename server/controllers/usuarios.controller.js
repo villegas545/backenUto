@@ -6,10 +6,10 @@ const buscarUsuario = async (req, res) => {
       where: { usuario: req.body.usuario, contra: req.body.contra },
     });
     if(usuario){
-      res.status(200).send(usuario);
+      res.status(200).send({message:'ok',usuario});
     }else{
-      res.status(404).send({
-        message: "Usuario o contraseña incorrectos",
+      res.status(200).send({
+        message: "fail",
       });
     }
   } catch (error) {

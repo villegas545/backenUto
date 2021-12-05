@@ -2,6 +2,7 @@ import model from "../database/models/";
 
 const agregarProducto = async (req, res) => {
   try {
+    console.log(req.body);
     await model.Producto.create(req.body);
     res.status(200).send({ mensaje: "Producto agregado" });
   } catch (error) {
